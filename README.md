@@ -30,6 +30,10 @@ If you prefer to use coloured backgrounds, then do this:
 var StyleSheet = require('react-native-debug-stylesheet').Backgrounds;
 ```
 
+## Update 
+react-native v0.1.7
+Dependency `npm install object-assign --save` 
+
 ### Customize
 
 If you'd rather make your own debug stylesheet than use the default
