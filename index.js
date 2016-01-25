@@ -1,6 +1,6 @@
 var StyleSheet = require('react-native').StyleSheet;
-var merge = require('merge');
-var assign = require('object-assign');
+import assign from 'lodash/object/assign';
+import merge from 'lodash/object/merge';
 
 function randomHexColor() {
   return '#'+('00000'+(Math.random()*16777216<<0).toString(16)).substr(-6);
@@ -35,8 +35,8 @@ function createDebugStylesheet(debugOptions) {
   }
 }
 
-DefaultDebugStylesheet = createDebugStylesheet({borderColor: randomHexColor, borderWidth: 1});
 
+let DefaultDebugStylesheet = createDebugStylesheet({borderColor: randomHexColor, borderWidth: 1});
 module.exports = assign(
   DefaultDebugStylesheet,
   { Borders: DefaultDebugStylesheet,
