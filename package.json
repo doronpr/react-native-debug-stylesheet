@@ -22,6 +22,9 @@
     "url": "https://github.com/brentvatne/react-native-debug-stylesheet/issues"
   },
   "homepage": "https://github.com/brentvatne/react-native-debug-stylesheet",
+  "dependencies": {
+    "lodash": "^3.10.1",
+  },
   "peerDependencies": {
     "react-native": ">=0.4"
   }
